@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>ООО "Партнер" - продажа строительных материалов</title><!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet"><!--Custom CSS-->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/flexslider.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" media="screen" rel="stylesheet" type="text/css"><!--Google Font-->
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&amp;subset=cyrillic" rel="stylesheet">
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!--Header Section-->
+	<div class="top" id="home">
+		<div class="container">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logo"><a href="/"><img alt="Партнер" src="images/header/logo.png"></a></div><!--Navigation-->
+			<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 pull-right">
+				<div class="nav">
+					<ul class="navi">
+						<li>
+							<a href="price.html">Цены</a>
+						</li>
+						<li>
+							<a href="#delivery">Доставка</a>
+						</li>
+						<li>
+							<a href="#pay">Оплата</a>
+						</li>						
+						<li>
+							<a href="#reviews">Отзывы</a>
+						</li>
+						<li>
+							<a href="#contact">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="banner">
+		<div class="carousel carousel-fade slide" data-ride="carousel" id="bannerSlider">
+			<!-- Indicators -->
+			<div class="carousel-inner">
+				<div class="item active" style="background-image:url(images/header/banner1.jpg);">
+					<div class="carousel-caption">
+						<div class="container">
+							<div class="col-md-12">
+								<div class="content">
+									<h1>Все виды кирпичей</h1>
+									<h2>Кирпич лицевой, одинарный, печной, блочный и др.</h2>
+									<div class="btn-orange">
+										<a href="price.html">Узнать цену</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image:url(images/header/banner2.jpg);">
+					<div class="carousel-caption">
+						<div class="container">
+							<div class="col-md-12">
+								<div class="content">
+									<h1>Строительные смеси</h1>
+									<h2>Цемент, клей плиточный, штукатурка и др.</h2>
+									<div class="btn-orange">
+										<a href="price.html">Узнать цену</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image:url(images/header/banner3.jpg);">
+					<div class="carousel-caption">
+						<div class="container">
+							<div class="col-md-12">
+								<div class="content">
+									<h1>Строительные материалы</h1>
+									<h2>Фанера, OSB, ДВП, ДСП</h2>
+									<div class="btn-orange">
+										<a href="price.html">Узнать цену</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#bannerSlider"></li>
+				<li data-slide-to="1" data-target="#bannerSlider"></li>
+				<li data-slide-to="2" data-target="#bannerSlider"></li>
+			</ol>
+		</div><!-- /.carousel -->
+	</section><!--Opt-in Section-->
+	<section class="bluebg" id="signup">
+		<div class="container msg">
+			<div id="message" style="display:none"></div>
+			<div class="col-lg-12 col-md-12 col-sm-12 opt-container">
+				<h1>Оставьте заявку</h1>
+				<h2>чтобы сделать заказ или узнать актуальную цену на товар</h2>
+				<form action="/mail.php" id="contactform" method="post" name="contactform">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<input id="name" name="name" placeholder="Имя" type="text">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<input id="email" name="email" placeholder="Email" type="text">
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<input id="phone" name="phone" placeholder="Телефон" type="text" required >
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							<div>
+								<input class="btn-blue" id="submit" type="submit" value="Отправить">
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="result">Заявка успешно отправлена. Наш менеджер свяжется с вами.</div>
+			</div>
+		</div>
+	</section><!--Features Section-->
+	<section class="feature-styles" id="delivery">
+		<div class="title-block">Доставка</div>
+		<div class="container feature-container">
+			<div class="col-lg-push-6 col-md-6 col-sm-12 col-xs-12 text-center">
+			<img alt="How it works?" src="images/body/gaz.jpg"></div>
+			<div class="col-lg-pull-6 col-md-6 col-sm-12 col-xs-12">
+				<h1>Грузовая ГАЗель</h1>
+				<div class="txt">
+					Мы можем доставить строительные материалы с помощью грузовой ГАЗели. Стоимость составит от 300р.
+				</div>
+			</div>
+		</div>
+		<div class="container feature-container">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+			<img alt="Reduce development time" src="images/body/manipulyator.jpg"></div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h1>Манипулятором</h1>
+				<div class="txt">
+					Также имеется манипулятор. Стоимость составит от 1000р.
+				</div>
+			</div>
+		</div>
+		
+	</section><!--Testimonials Section-->
+	<section class=" testimonial-bg" id="reviews">
+		<div class="flexslider" id="testimonial">
+			<div class="container">
+				<div class="col-lg-12 testimonial-title">
+					Отзывы наших покупателей
+				</div>
+				<ul class="slides">
+					<li>
+						<div class="testimonial-photo"><img alt="" src="images/body/male.svg"></div>
+						<div class="container">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 testimonial-content">
+								<p>Заказывал лицевой кирпич, для своего дома. 15 поддонов. Привезли с помощью манипулятора. Все быстро и удобно. Расплатился при доставке и проверки товара.</p>
+								<p><span>Антон Кузин - частное лицо</span></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonial-photo"><img alt="" src="images/body/male.svg"></div>
+						<div class="container">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 testimonial-content">
+								<p>Хочу выразить благодарность ООО "Партнер". Покупал Knauf шпатлевку. Отличное качество. Все доставили вовремя.</p>
+								<p><span>Вадим Кондрашев - частное лицо</span></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="testimonial-photo"><img alt="" src="images/body/male.svg"></div>
+						<div class="container">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 testimonial-content">
+								<p>Брал сетку Рабица. Нужно было много, около 3000м. Все понравилось. Качество сетки хорошее и не дорого. Оплатил все картой. Спасибо.</p>
+								<p><span>Руслан Максиков - индивидуальный предприниматель</span></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section><!--Pricing Table Section-->
+	<section id="pay">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pricing">
+				<div class="title-block">Виды оплат</div>
+				<div class="sub-title-block">При заказе на базе:</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pay-box">
+				<div class="pay__img"><img src="images/body/cash.png" alt=""></div>
+				<div class="pay__title">1. Наличными</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pay-box">
+				<div class="pay__img"><img src="images/body/visa.png" alt=""></div>
+				<div class="pay__title">2. Банковскими картами</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pay-box">
+				<div class="pay__img"><img src="images/body/bez.png" alt=""></div>
+				<div class="pay__title">3. Безналичный расчет</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pricing">
+				<div class="sub-title-block">Оплата при доставке на объект</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-xs-12 pay-box pay-box-last">
+				<div class="pay__img"><img src="images/body/dostavka.png" alt=""></div>
+				<div class="pay__title">1. Наличными</div>
+			</div>
+		</div>
+	</section><!--Contact Section-->
+	<section id="contact">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact">
+				<h1>Контакты</h1>
+				<h2>Если остались вопросты, то задайте их нам.</h2>
+			</div>
+		</div>
+		<div class="container contact-info">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<i class="fa fa-phone"></i>8 (927) 977-81-87
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<i class="fa fa-envelope"></i>partner13rm@mail.ru
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<i class="fa fa-map-marker"></i>430030, Россия, Республика Мордовия, г. Саранск, ул. Коммунистическая, д. 123А , пом.8
+			</div>
+		</div>
+		<div class="container contact-info">
+			<div class="inn">
+				<p>ОГРН 1171326003672</p>
+				<p>ИНН 1326248560</p>
+				<p>КПП 132601001</p>
+			</div>
+			<div>Генеральный директор: Эрзяйкина Елена Алексеевна</div>
+		</div>
+		<div class="container contact-form">
+			<form action="/mail.php" id="contactmsg" method="post" name="contactmsg">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input id="name" name="name" placeholder="Имя" type="text">
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input id="email" name="email" placeholder="Email" type="text">
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input id="phone" name="phone" placeholder="Телефон" type="text" required >
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<textarea cols="" id="detail" name="detail" placeholder="Сообщение" rows="8"></textarea>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<input class="btn-message" id="sendmsg" type="submit" value="Отправить">
+				</div>
+			</form>
+		</div>
+		<div id="contact-message" style="display:none"></div>
+		<div class="result">Заявка успешно отправлена. Наш менеджер свяжется с вами.</div>
+	</section><!-- Footer Section-->
+	<section id="footer">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+			<div class="footer-nav text-center">
+				<ul class="navi">
+					<li>
+						<a href="#home">Главная</a>
+					</li>
+					<li>
+						<a href="##delivery">Доставка</a>
+					</li>
+					<li>
+						<a href="#pay">Оплата</a>
+					</li>
+					<li>
+						<a href="#reviews">Отзывы</a>
+					</li>
+					<li>
+						<a href="#contact">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				© 2018 ООО "Партнер". Все права защищены.
+			</div>
+		</div>
+	</section><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+	</script> <!-- Include all compiled plugins (below), or include individual files as needed -->
+	 
+	<script src="js/custom.js">
+	</script> 
+	<script src="js/bootstrap.js">
+	</script> 
+	<script src="js/jquery.easing.1.3.js">
+	</script> 
+	<script defer src="js/jquery.flexslider-min.js">
+	</script>
+</body>
+</html>
